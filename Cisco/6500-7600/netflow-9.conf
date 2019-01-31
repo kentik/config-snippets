@@ -1,0 +1,22 @@
+! Name of interface whose IP will be source of flow records.
+ip flow-export source interface_name
+ip flow-export version 9
+! Direct send to Kentik Flow Ingest
+ip flow-export {{kentik_ingest_ip_from_UI}}
+
+ip flow-cache timeout active 1
+
+mls nde sender version 9
+! Set sample rate based on flow volume.
+mls sampling packet-based {{device_sample_rate}} 8000
+
+mls flow ip interface-full
+mls flow ipv6 interface-full
+mls nde interface
+mls aging long 64
+mls aging normal 64
+
+! Define your custom flow sampler
+flow-sampler-map <mysampler>
+! Match sample rate set above.
+  mode random one-out-of {{device_sample_rate}}
