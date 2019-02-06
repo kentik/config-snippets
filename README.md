@@ -1,7 +1,15 @@
-# config-snippets
+# Kentik Router/Switch configuration snippets repository
 Public repository that contains all available config snippets Kentik users can leverage to configure their networking equipments to export data to Kentik.
+## What is this repository used for:
+This collaborative repository is intended to support Kentik customers needs to configure their devices to export flow/snmp/bgp to Kentik's ingest platform.
+It can be used in two ways:
+* these config snippets are leveraged in the Kentik Portal UI at device creation time to suggest configuration snippets based on the user's choice of device vendor and model
+* these are also made available to Kentik Users to:
+  * lookup configuration items for their networking devices outside of the onboarding process. These can be fetched using the github Raw endpoints, for example: [https://raw.githubusercontent.com/kentik/config-snippets/master/Juniper/MX-series/ipfix.conf]
+  * users can contribute gotchas or new devices that aren't yet in the repository
+* ideally, only Kentik Admins should be allowed to push config snippet changes to the repository, ideally users should submit pull requests to be reviewed by Kentik staff.
 
-# guidelines
+# Guidelines
 * Files are organized in this directory structure
   * [Vendor] > ([Product Line]) > [Model]
 * For each router/switch model, multiple config files need to be present
@@ -17,12 +25,12 @@ Public repository that contains all available config snippets Kentik users can l
   * ```<variable>``` will display "variable" in a highlighted manner, for instance for instances of config items users usually provide naming for
 * Each vendor root directory contains a 200px width transparent png logo for the associated vendor
 
-# templating guidelines
+# Templating guidelines
 Since the UI doesn't currently include any Kentik Flow Proxy registration process, the UI doesn't know about which IPs the user will be sent to. 
 Therefore, there need to be two separate config templates for cases with and without agent. In the ```*-agent.conf``` config snippet, we can't reference ```{{variable}}``` types of variables because they're not present in the UI for rendering.
 For this reason, the agent related templates shall include ```<variable>``` types of markers instead of ```{{variable}}``` ones.
 
-## list of used template markups
+## List of used template markups
 * ```{{kentik_ingest_ip_from_UI}}```: refers to the IP given by Kentik Portal for the router/switch to export their flows to
 * ```{{kentik_ingest_UDP_port_from_UI}}```: refers to the port displayed in Kentik Portal router/switch device creation that is used to send network flows to in relation to the previously stated IP address
 * ```{{device_sample_rate}}```: sample rate the user is configuring on their router/switch and has also entered in the Kentik Portal UI during device creation
