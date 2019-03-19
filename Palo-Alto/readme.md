@@ -1,5 +1,5 @@
 # Palo Alto configuration guidelines
-Flow configuration on PanOS is displayed in greater detail on their online documentation portal (HERE)[https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-admin/monitoring/netflow-monitoring/configure-netflow-exports]
+Flow configuration on PanOS is displayed in greater detail on their online documentation portal [HERE](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-admin/monitoring/netflow-monitoring/configure-netflow-exports)
 
 ## Configuration via the PanOS UI
 ### Create a new KENTIK profile
