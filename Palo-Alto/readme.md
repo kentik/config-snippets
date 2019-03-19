@@ -3,7 +3,7 @@ Flow configuration on PanOS is displayed in greater detail on their online docum
 
 ## Configuration via the PanOS UI
 ### Create a new KENTIK profile
-Go to Device &rarr;Server Profiles&rarr;Netflow&rarr; Add Profile
+Go to Device &rarr; Server Profiles &rarr; Netflow &rarr; Add Profile
 In this profile use these settings:
 * *Name*: <KENTIK_PUBLIC_INGEST>
 * *Active Timeout*: 1 Minute
@@ -15,5 +15,5 @@ In this profile use these settings:
 * *Port*: {{kentik_ingest_UDP_port_from_UI}}
 
 ### Enable Flow Collection on interfaces
-Got to Network&rarr;Interfaces&rarr;Ethernet: <KENTIK_FLOW>
+Got to Network &rarr; Interface s&rarr; Ethernet: <KENTIK_FLOW>
 
