@@ -1,4 +1,7 @@
-# Huawei configuration gotchas
+# General guidelines
+Details on how to use the below templates to configure an Arista equipment are displayed in the [README.md](https://github.com/kentik/config-snippets/blob/master/README.md) file at the root of this repository
+
+# Huawei configuration notes
 ## Interface index in flows
 Prior to version 5 of VRP (version <= 5), Huawei routers will store an Interface index in flows that doesn't match the ifIndex from the SNMP polls.
 There are two distinct cases, described below.
