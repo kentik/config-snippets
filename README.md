@@ -5,7 +5,7 @@ This collaborative repository is intended to support Kentik customers needs to c
 It can be used in two ways:
 * these config snippets are leveraged in the Kentik Portal UI at device creation time to suggest configuration snippets based on the user's choice of device vendor and model
 * these are also made available to Kentik Users to:
-  * lookup configuration items for their networking devices outside of the onboarding process. These can be fetched using the github Raw endpoints, for example: [https://raw.githubusercontent.com/kentik/config-snippets/master/Juniper/MX-series/ipfix.conf]
+  * lookup configuration items for their networking devices outside of the onboarding process. These can be fetched using the github Raw endpoints, for example: https://raw.githubusercontent.com/kentik/config-snippets/master/Juniper/MX-series/ipfix.conf
   * users can contribute gotchas or new devices that aren't yet in the repository
 * ideally, only Kentik Admins should be allowed to push config snippet changes to the repository, ideally users should submit pull requests to be reviewed by Kentik staff.
 
