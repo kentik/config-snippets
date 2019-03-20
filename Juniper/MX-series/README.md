@@ -23,3 +23,24 @@ chassis {
   }
 }
 ```
+## additional config required on linecards and interfaces
+The ```ipfix-interfaces.conf``` and ```ipfix-linecards.conf``` display these additionaly required stanzas.
+* Add this one to every active lincard:
+```
+chassis {
+  fpc 0 {
+    sampling-instance KENTIK;
+  }
+  fpc 1 {
+    sampling-instance KENTIK;
+  }
+}
+```
+* And add this to active interfaces:
+```
+family inet {
+  sampling {
+    input;
+  }
+}
+```
