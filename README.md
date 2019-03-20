@@ -7,7 +7,11 @@ It can be used in two ways:
 * these are also made available to Kentik Users to:
   * lookup configuration items for their networking devices outside of the onboarding process. These can be fetched using the github Raw endpoints, for example: https://raw.githubusercontent.com/kentik/config-snippets/master/Juniper/MX-series/ipfix.conf
   * users can contribute gotchas or new devices that aren't yet in the repository
-* ideally, only Kentik Admins should be allowed to push config snippet changes to the repository, ideally users should submit pull requests to be reviewed by Kentik staff.
+* Only Kentik Admins should be allowed to push config snippet changes to Master, users should submit pull requests to be reviewed by Kentik staff.
+## Using templates outside of the device onboarding UI
+In order to use these templates outside of the onboarding UI, users should copy paste their content in the device's configuration CLI. Users should ensure to read any gotchas listed in the README.md file of any configuration directory.
+These configuration snippets are provided as-is, meaning some entries may sometimes (as rarely as possible though) cause an error, lookout for these and please use github issues to report them to Kentik Admins.
+To understand what each template describes, please refer to the next section of this README.
 
 # Guidelines
 * Files are organized in this directory structure
