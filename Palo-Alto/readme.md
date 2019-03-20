@@ -1,3 +1,6 @@
+# General guidelines
+Details on how to use the below templates to configure a Palo Alto device are displayed in the [README.md](https://github.com/kentik/config-snippets/blob/master/README.md) file at the root of this repository
+
 # Palo Alto configuration guidelines
 Flow configuration on PanOS is displayed in greater detail on their online documentation portal [HERE](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-admin/monitoring/netflow-monitoring/configure-netflow-exports)
 
