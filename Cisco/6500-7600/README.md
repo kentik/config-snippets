@@ -1,5 +1,5 @@
 # General guidelines
-Details on how to use the below templates to configure an Arista equipment are displayed in the [README.md](https://github.com/kentik/config-snippets/blob/master/README.md) file at the root of this repository
+Details on how to use the below templates to configure Cisco 65xx/76xx equipment are displayed in the [README.md](https://github.com/kentik/config-snippets/blob/master/README.md) file at the root of this repository
 
 # Notes on Cisco 65xx / 76xx:
 * SNMP configuration requires ifIndex persistence upon reboot to be enabled, as it isn't by default.
