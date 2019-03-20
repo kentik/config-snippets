@@ -1,4 +1,8 @@
-## Notes:
+# General guidelines
+Details on how to use the below templates to configure an Arista equipment are displayed in the [README.md](https://github.com/kentik/config-snippets/blob/master/README.md) file at the root of this repository
+
+# Juniper MX configuration notes
+## Miscellaneous useful notes
 * by default, Juniper devices export flow data as JFLOW (~ NetFlow v5), but the MX series can be set to export in-line Jflow as IPFIX instead. 
   * If unable to support in-line JFlow, try using Netflow v5 instead
 * routers must persist SNMP interface IDs across reboots, this is usually done by default on MX devices
