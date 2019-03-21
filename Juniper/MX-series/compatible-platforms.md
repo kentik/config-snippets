@@ -15,6 +15,5 @@ Feel free to update this section if a platform you are using has been successful
 * SRX340
 * SRX4200
 * PTX1000
-* EX9208
 * vSRX
 
