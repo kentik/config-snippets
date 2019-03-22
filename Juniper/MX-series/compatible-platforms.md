@@ -16,4 +16,5 @@ Feel free to update this section if a platform you are using has been successful
 * SRX4200
 * PTX1000
 * vSRX
+* Special case: for QFX100X, IPFix is supported decently in JunOS versions between 17.3 and 18.3
 
