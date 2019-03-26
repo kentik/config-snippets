@@ -10,6 +10,7 @@ Flow configuration on PanOS is displayed in greater detail on their online docum
 Go to *Device* &rarr; *Server Profiles* &rarr; *Netflow* &rarr; *Add Profile*
 In this profile use these settings:
 * *Name*: <KENTIK_PUBLIC_INGEST>
+* *Template Refresh Rate*: 30 minutes, 600 packets 
 * *Active Timeout*: 1 Minute
 * *PanOS Field Types*:
   * App-ID
@@ -25,6 +26,7 @@ Got to *Network* &rarr; *Interfaces* &rarr; *Ethernet*: <KENTIK_FLOW>
 Go to *Device* &rarr; *Server Profiles* &rarr; *Netflow* &rarr; *Add Profile*
 In this profile use these settings:
 * *Name*: <KENTIK_FLOW_PROXY_INGEST>
+* *Template Refresh Rate*: 30 minutes, 600 packets 
 * *Active Timeout*: 1 Minute
 * *PanOS Field Types*:
   * App-ID
