@@ -3,8 +3,9 @@ Details on how to use the below templates to configure an Juniper MX equipment a
 
 # Juniper MX configuration notes
 ## Miscellaneous useful notes
-* by default, Juniper devices export flow data as JFLOW (~ NetFlow v5), but the MX series can be set to export in-line Jflow as IPFIX instead. 
-  * If unable to support in-line JFlow, try using Netflow v5 instead
+* Juniper MX devices support both RE-based sampling and inline Jflow sampling.
+  * RE-based flow sampling is done on the CPU of the RE so it has the potential to affect convergence performance. This method supports Netflow v5, v8, and v9 and can do multiple collector destinations.
+  * Inline Jflow is done on the FPC ASIC so the performance is much better. It supports Netflow v9 and IPFIX. More details on Inline jflow are located in Juniper's docs here: https://www.juniper.net/documentation/en_US/junos/topics/concept/inline-sampling-overview.html
 * routers must persist SNMP interface IDs across reboots, this is usually done by default on MX devices
 * Juniper MX default flow table size may not be large enough for some networks/environments, which will result in under-reporting in the flow data
 
@@ -24,7 +25,7 @@ chassis {
 }
 ```
 ## additional config required on linecards and interfaces
-The ```ipfix-interfaces.conf``` and ```ipfix-linecards.conf``` display these additionaly required stanzas.
+The ```ipfix-interfaces.conf``` and ```ipfix-linecards.conf``` display these additionally required stanzas.
 * Add this one to every active lincard:
 ```
 chassis {
