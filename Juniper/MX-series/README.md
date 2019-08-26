@@ -45,3 +45,7 @@ family inet {
   }
 }
 ```
+
+
+# Streaming Telemetry notes 
+Currently, Streaming Telemetry is only supported for dial-in and dial-out modes for MX devices. See ```telemetry_gnmi.conf``` for the dial-in device configuration and ```telemetry_native.conf``` for the dial-out configuration. 
