@@ -2,6 +2,7 @@
 
 1. Go to https://packagecloud.io/kentik/kprobe and find the Distro/Version for your server
 2. Install the Package repository, this will allow you to upgrade to future versions leveraging your OS’ package manager. The package repository install instructions are located on the top right corner of the page of each selected package:
+![thing](/assets/kprobe-repo-install.png)
 3. Install the package locally using your Operating Systems package manager. Example: **`sudo yum install kprobe-1.4.0-1.x86_64`**
 
 #### Notes on `kprobe` setup
