@@ -13,7 +13,7 @@
 
 ## Running kprobe
 
-**_Note:_ kprobe requires Root privileges to run.**
+**Note**: kprobe requires Root privileges to run.
 
 - The following assumes that the kprobe agent is installed and available on the server.
 - Run one instance of kprobe per interface on the server.
