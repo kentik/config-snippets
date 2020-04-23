@@ -39,6 +39,7 @@ For this reason, the agent related templates shall include ```<variable>``` type
 * ```{{kentik_ingest_ip_from_UI}}```: refers to the IP given by Kentik Portal for the router/switch to export their flows to
 * ```{{kentik_ingest_UDP_port_from_UI}}```: refers to the port displayed in Kentik Portal router/switch device creation that is used to send network flows to in relation to the previously stated IP address
 * ```{{device_sample_rate}}```: sample rate the user is configuring on their router/switch and has also entered in the Kentik Portal UI during device creation
+* ```{{device_sending_ip}}```: refers to the 1st IP entered in portal device configuration form in the sending ip section of the flow configuration
 * ```{{kentik_portal_ASN}}```: Kentik's user ASN, routers configured to export to Kentik will be peered with the Kentik Platform with *iBGP*, and the platform's BGP ingest needs to be a *route reflector client*
 * ```{{kentik_UI_bgp_peering_ipv4}}```: refers to the peering IP on the Kentik BGP ingest platform that the device needs to establish an IPv4 session with
 * ```{{kentik_UI_bgp_peering_ipv6}}```: refers to the peering IP on the Kentik BGP ingest platform that the device needs to establish an IPv6 session with
