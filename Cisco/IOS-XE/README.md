@@ -6,3 +6,5 @@ Troubleshooting commands:
 show flow monitor <KENTIK-MONITOR> cache format table
 
 show flow exporter
+
+show flow exporter statistics
