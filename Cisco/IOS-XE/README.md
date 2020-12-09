@@ -2,9 +2,6 @@
 Details on how to use the below templates to configure an IOS-XE running equipment are displayed in the [README.md](https://github.com/kentik/config-snippets/blob/master/README.md) file at the root of this repository
 
 Troubleshooting commands:
-
-show flow monitor <KENTIK-MONITOR> cache format table
-
-show flow exporter
-
-show flow exporter statistics
+* `show flow monitor <KENTIK-MONITOR> cache format table`
+* `show flow exporter`
+* `show flow exporter statistics`
