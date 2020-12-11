@@ -33,7 +33,7 @@ In this profile use these settings:
   * User-ID
 * *Collector Name*: <KENTIK>
 * *Collector Netflow Server*: <kentik_flow_proxy_agent_IP>
-* *Port*: <netflow-9_port_default_9995_with_agent>
+* *Port*: 9995 (update with your own if your KProxy setup uses a non-default, custom-set port to ingest flow records)
 
 #### Enable Flow Collection on interfaces
 Got to *Network* &rarr; *Interfaces* &rarr; *Ethernet*: <KENTIK_FLOW>
