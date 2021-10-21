@@ -10,6 +10,7 @@ Feel free to update this section if a platform you are using has been successful
 * MX240
 * MX480
 * MX960
+* *vMX
 * SRX240h2
 * SRX300
 * SRX340
