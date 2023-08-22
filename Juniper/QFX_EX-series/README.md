@@ -1,9 +1,10 @@
 # General guidelines
-Details on how to use the below templates to configure a Juniper MX equipment are displayed in the [README.md](https://github.com/kentik/config-snippets/blob/master/README.md) file at the root of this repository
+Details on how to use the below templates to configure a Juniper QFX and EX equipment are displayed in the [README.md](https://github.com/kentik/config-snippets/blob/master/README.md) file at the root of this repository
 
 # Juniper QFX/EX configuration notes
 The default chosen flow protocol for QFX and EX series is initially sFlow
-## Be aware that sFlow on QFX platforms is not perfect
+* Kentik does not use interface counters polled over sFlow, so the suggeston is to configure polling interval to 0, which means polling will not happen.  
+## sFlow on QFX platforms
 * On some older code, sFlow is the only export protocol available. This works, but on particularly busy devices, the adaptive sampling backoff algorithm is not implemented, so flow sampling rates will increase until the device is reset. Contact support@kentik.com to discuss workarounds.
 * QFX 1000X platforms support IPFIX in code 17.3 and newer. It is recommended that customers upgrade to this version of code to avoid the adaptive sampling bug discussed previously 
 * sFlow support for adaptive sampling is greatly improved on the QFX platforms starting in 18.3
@@ -20,8 +21,7 @@ adaptive-sample-rate rate {
     fallback;
 }
 ```
-
-## SFlow implementation on EX platforms
+## SFlow on EX platforms
 * Sflow presented a few crippling issues on the EX platform prior to version 12, please make sure you are running a more recent software version
 * The proper Adaptive Sample Rate command set stills need to be entered (comes with version >= 12 on EX) for sflow to work in an acceptable manner:
 
