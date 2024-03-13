@@ -1,5 +1,7 @@
 # Tested compatible platforms
 Feel free to update this section if a platform you are using has been successfully tested with it
+* vEX
+* EX3300
 * EX4550
 * EX4200
 * EX9208
