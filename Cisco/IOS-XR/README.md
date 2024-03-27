@@ -8,4 +8,4 @@ snmp-server ifindex persist
 ```
 
 # Streaming Telemetry notes 
-Currently, Streaming Telemetry is only supported for dial-out configurations on the IOS XR platform 
+Currently, Streaming Telemetry is only supported for dial-out configurations on the IOS XR platform using Kentik's kproxy. Dial-in is supported using kagent with Kentik's NMS product.
