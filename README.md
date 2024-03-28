@@ -1,4 +1,4 @@
-# Kentik Router/Switch configuration snippets repository
+# Kentik device configuration snippets repository
 Public repository that contains all available config snippets Kentik users can leverage to configure their networking equipments to export data to Kentik.
 ## What is this repository used for:
 This collaborative repository is intended to support Kentik customers needs to configure their devices to export flow/snmp/bgp to Kentik's ingest platform.
@@ -16,7 +16,7 @@ To understand what each template describes, please refer to the next section of 
 # Guidelines
 * Files are organized in this directory structure
   * [Vendor] > ([Product Line]) > [Model]
-* For each router/switch model, multiple config files need to be present
+* For each device model, multiple config files need to be present
   * *Network flow configuration:* ```<flow_protocol>.conf```: netflow-9.conf, netflow-5.conf, ipfix.conf, sflow.conf ...
   * *Network flow configuration in case the Kentik Flow Proxy Agent is used:* ```<flow_protocol>-agent.conf```: netflow-9-agent.conf, ipfix-agent.conf ...
   * *Streaming Telemetry configuration based on the type of telemtry support and whether there the Kentik Flow Proxy Agent is used: telemetry:* telemetry_gnmi.conf, telemetry_native.conf, telemetry_native-agent.conf, telemetry_dialout.conf, telemetry_dialout-agent.conf ... 
@@ -36,9 +36,9 @@ Therefore, there need to be two separate config templates for cases with and wit
 For this reason, the agent related templates shall include ```<variable>``` types of markers instead of ```{{variable}}``` ones.
 
 ## List of used template markups
-* ```{{kentik_ingest_ip_from_UI}}```: refers to the IP given by Kentik Portal for the router/switch to export their flows to
-* ```{{kentik_ingest_UDP_port_from_UI}}```: refers to the port displayed in Kentik Portal router/switch device creation that is used to send network flows to in relation to the previously stated IP address
-* ```{{device_sample_rate}}```: sample rate the user is configuring on their router/switch and has also entered in the Kentik Portal UI during device creation
+* ```{{kentik_ingest_ip_from_UI}}```: refers to the IP given by Kentik Portal for the device to export their flows to
+* ```{{kentik_ingest_UDP_port_from_UI}}```: refers to the port displayed in Kentik Portal device creation that is used to send network flows to in relation to the previously stated IP address
+* ```{{device_sample_rate}}```: sample rate the user is configuring on their device and has also entered in the Kentik Portal UI during device creation
 * ```{{device_sending_ip}}```: refers to the 1st IP entered in portal device configuration form in the sending ip section of the flow configuration
 * ```{{kentik_portal_ASN}}```: Kentik's user ASN, routers configured to export to Kentik will be peered with the Kentik Platform with *iBGP*, and the platform's BGP ingest needs to be a *route reflector client*
 * ```{{kentik_UI_bgp_peering_ipv4}}```: refers to the peering IP on the Kentik BGP ingest platform that the device needs to establish an IPv4 session with
