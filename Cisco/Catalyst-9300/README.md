@@ -1,2 +1,2 @@
 # General guidelines
-Details on how to use the below templates to configure a Nexus 3000 equipment are displayed in the [README.md](https://github.com/kentik/config-snippets/blob/master/README.md) file at the root of this repository
+Details on how to use the below templates to configure a Catalyst 9300 equipment are displayed in the [README.md](https://github.com/kentik/config-snippets/blob/master/README.md) file at the root of this repository
