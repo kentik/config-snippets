@@ -1,4 +1,4 @@
-# Host SFLOW Deamon
+# Host sFlow Daemon
 
 As Kentik is depricating our Kprobe agent, we reccomend users switch to the opensource Host SFLOW agent located here: https://github.com/sflow/host-sflow
 
